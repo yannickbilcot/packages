@@ -1,0 +1,10 @@
+--- a/src/ohproduct.cxx
++++ b/src/ohproduct.cxx
+@@ -27,6 +27,7 @@
+ #include <utility>                      // for pair
+ #include <vector>                       // for vector
+ #include <utility>
++#include <errno.h>
+ 
+ #include "libupnpp/device/device.hxx"   // for UpnpService
+ #include "libupnpp/log.hxx"             // for LOGDEB
