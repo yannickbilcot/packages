@@ -36,7 +36,7 @@ define Package/mpd/Default
   TITLE:=Music Player Daemon
   URL:=http://www.musicpd.org/
   DEPENDS:= +glib2 +libcurl +libpthread +libmpdclient $(ICONV_DEPENDS) +libstdcpp \
-	    +libflac +BUILD_PATENTED:libmad +libvorbisidec +AUDIO_SUPPORT:alsa-lib
+	    +libaudiofile +libflac +BUILD_PATENTED:libmad +libvorbisidec +AUDIO_SUPPORT:alsa-lib
 endef
 
 define Package/mpd/Default/description
@@ -184,7 +184,7 @@ ifeq ($(BUILD_VARIANT),mini)
   # oggflac is not compatible with tremor
   CONFIGURE_ARGS += \
 	--disable-aac \
-	--disable-audiofile \
+	--enable-audiofile \
 	--disable-fifo \
 	--disable-ffmpeg \
 	--disable-id3 \
