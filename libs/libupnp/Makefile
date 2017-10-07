@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libupnp
-PKG_VERSION:=1.6.19
+PKG_VERSION:=1.6.19.jfd3
 PKG_RELEASE:=2
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=@SF/pupnp
-PKG_MD5SUM:=ee16e5d33a3ea7506f38d71facc057dd
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=http://www.lesbonscomptes.com/upmpdcli/downloads
+PKG_MD5SUM:=6f54e2b9598cb05577fb246fcb44aa62
 PKG_MAINTAINER:=Ted Hess <thess@kitschensync.net>
 
 PKG_FIXUP:=autoreconf
